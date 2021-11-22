@@ -10,4 +10,110 @@ Template: inspiro
 
 .all_card{
     border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05) !important;
+    color: rgb(61, 60, 60) !important;
+    font-weight: 700 !important;
+    margin-bottom: 50px !important;
 }
+.formateur_card{
+    border-radius: 10px;
+    background: rgba(66, 66, 66, 0.356) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05) !important;
+    color: rgb(61, 60, 60) !important;
+    font-weight: 700 !important;
+    margin-bottom: 50px !important;
+}
+
+.div_apprenants{
+    background: rgb(175,58,58) !important;
+    background: linear-gradient(90deg, rgba(175,58,58,1) 0%, rgba(167,64,54,1) 35%, rgba(255,255,255,1) 100%) !important;
+}
+
+.title_apprenants{
+    /* text-decoration: underline double #e4087e !important; */
+    text-shadow: 3px 3px 0px rgb(75, 72, 72), 9px 8px 0px rgba(0,0,0,0.15) !important;
+}
+.title_formateur{
+    text-shadow: 2px 2px 0px rgb(75, 72, 72), 9px 8px 0px rgba(0,0,0,0.15) !important;
+}
+
+.categorie_item{
+    width: 500px!important;
+    max-width: 100%!important;
+
+}
+.wp-block-file{
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: start !important;
+    
+}
+.wp-block-file a{
+    position: static;
+}
+.wp-block-media-text{
+   
+}
+.card_techno_pres{
+    
+}
+.card_techno_pres{
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+    border-bottom: 2px solid black;
+}
+.wp-block-column:nth-of-type(2){
+    margin-right: 50px;
+}
+
+
+.entry-content{
+    background-color: lightgray !important;
+}
+
+
+a.wp-block-file__button{
+    display: inline-block !important;
+    padding: 2px 5px !important;
+    border: 2px solid red !important;
+    color:red !important;
+    background-color: white !important;
+    cursor: pointer !important;
+    font-size: 1rem !important;
+    border-radius: .5rem !important;
+    position: relative !important;
+    overflow: hidden !important;
+    z-index: 0 !important;
+    margin-top: 1rem !important;
+    text-decoration: none !important;
+    text-align: center;
+    width: 50%;
+    
+  }
+  
+  a.wp-block-file__button::before{
+    content: '' !important;
+    position: absolute !important;
+    top:0; right: 0 !important;
+    width:0% !important;
+    height:100% !important;
+    background:red !important;
+    transition: .3s linear !important;
+    z-index: -1 !important;
+  }
+  
+  a.wp-block-file__button:hover::before{
+    width:100% !important;
+    left: 0 !important;
+  }
+  
+  a.wp-block-file__button:hover{
+    color:#fff !important;
+  }
