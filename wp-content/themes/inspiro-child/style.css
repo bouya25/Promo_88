@@ -20,28 +20,70 @@ Template: inspiro
     margin-bottom: 50px !important;
 }
 .formateur_card{
-    border-radius: 10px;
-    background: rgba(66, 66, 66, 0.356) !important;
+    border-radius: 10px !important;
+    background: rgba(231, 231, 231, 0.356) !important;
     border: 1px solid rgba(255, 255, 255, 0.5) !important;
     border-right: 1px solid rgba(255, 255, 255, 0.2) !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15) !important;
     color: rgb(61, 60, 60) !important;
     font-weight: 700 !important;
     margin-bottom: 50px !important;
+    /* padding-left: 1rem !important;
+    padding-right: 1rem !important;
+     */
 }
 
 .div_apprenants{
-    background: rgb(175,58,58) !important;
-    background: linear-gradient(90deg, rgba(175,58,58,1) 0%, rgba(167,64,54,1) 35%, rgba(255,255,255,1) 100%) !important;
+    background: rgb(63,94,251) !important; 
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%) !important;
+}
+.div_avis{
+    background: rgb(131,58,180) !important;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%) !important;
+}
+.div_gallery{
+    background: rgb(131,58,180) !important;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%) !important;
+
 }
 
+.title_avis, .title_gallery{
+    text-shadow: 1px 2px 2px rgb(75, 72, 72), 9px 8px 0px rgba(0,0,0,0.15) !important;
+}
 .title_apprenants{
-    /* text-decoration: underline double #e4087e !important; */
+    
     text-shadow: 3px 3px 0px rgb(75, 72, 72), 9px 8px 0px rgba(0,0,0,0.15) !important;
+    text-decoration: 2px underline  #f00d0d !important;
+    text-underline-offset: 5px !important;
+    text-decoration-line: underline !important;
 }
 .title_formateur{
     text-shadow: 2px 2px 0px rgb(75, 72, 72), 9px 8px 0px rgba(0,0,0,0.15) !important;
+    text-decoration: 2px underline  #f00d0d !important;
+    text-underline-offset: 5px !important;
+    text-decoration-line: underline !important;
+}
+.title_technos{
+    text-shadow: 2px 2px 0px rgb(75, 72, 72), 9px 8px 0px rgba(0,0,0,0.15) !important;
+    text-decoration: 2px underline  #f00d0d !important;
+    text-underline-offset: 5px !important;
+    text-decoration-line: underline !important;
+}
+.entry-title{
+    text-shadow: 2px 2px 0px rgb(75, 72, 72), 9px 8px 0px rgba(0,0,0,0.15) !important;
+    text-decoration: 2px underline  #f00d0d !important;
+    text-underline-offset: 5px !important;
+    text-decoration-line: underline !important;
+}
+.entry-title h1{
+    color: #f00 !important;
+}
+
+.page .entry-title, .page-title {
+    color: #f00 !important;
+    font-size: 3rem !important;
+    display: none;
 }
 
 .categorie_item{
@@ -69,11 +111,10 @@ Template: inspiro
     margin-bottom: 25px !important;
 }
    
-.wp-block-column:nth-of-type(2){
-    margin-right: 50px;
+.wp-block-group.has-background {
+    padding: 1.25em 1em !important;
+   
 }
-
-
 
 
 
@@ -115,3 +156,57 @@ a.wp-block-file__button{
   a.wp-block-file__button:hover{
     color:#fff !important;
   }
+
+  .entry-content .wp-block-columns {
+    padding-left: 0.5em !important;
+    padding-right: 0.5em !important;
+}
+
+  .techno_card{
+    border-radius: 10px !important;
+    background: rgba(197, 197, 197, 0.356) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15) !important;
+    color: rgb(61, 60, 60) !important;
+    padding: 20px;
+    margin-top: 30px;
+  }
+.rt-container-fluid{
+    border-radius: 10px !important;
+    background: rgba(197, 197, 197, 0.356) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15) !important;
+    color: rgb(61, 60, 60) !important;
+    padding-top: 10px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    padding-bottom: 60px !important;
+}
+
+ul.slick-dots {
+    margin-bottom: -60px !important;
+}
+
+img.rt-responsive-img{
+   
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item-content-wrapper.tss-right {
+    border-radius: 10px !important;
+    background: rgba(255, 255, 255, 0.56) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15) !important;
+    color: rgb(61, 60, 60) !important;
+}
+
+
+
+
