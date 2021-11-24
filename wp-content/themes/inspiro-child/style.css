@@ -7,6 +7,7 @@ Version: 1.6.0
 Template: inspiro
 */
 
+/* div card des apprenants et formateurs. */
 
 .all_card{
     border-radius: 10px;
@@ -34,48 +35,56 @@ Template: inspiro
      */
 }
 
+/* div catégory */
+
 .div_apprenants{
-    background: rgb(63,94,251) !important; 
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%) !important;
+    /* background: rgb(63,94,251) !important; 
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%) !important; */ 
+    background: rgba(197, 197, 197, 0.356) !important; 
+    color: rgb(61, 60, 60) !important;
 }
 .div_avis{
-    background: rgb(131,58,180) !important;
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%) !important;
+    /* background: rgb(131,58,180) !important;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%) !important; */
+    background: rgba(197, 197, 197, 0.356) !important;
+    color: rgb(61, 60, 60) !important;
 }
 .div_gallery{
-    background: rgb(131,58,180) !important;
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%) !important;
-
+    /* background: rgb(131,58,180) !important;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%) !important; */
+    background: rgba(197, 197, 197, 0.356) !important;
+    color: rgb(61, 60, 60) !important;
 }
 
+
+/* les titres */
+
+
 .title_avis, .title_gallery{
-    text-shadow: 1px 2px 2px rgb(75, 72, 72), 9px 8px 0px rgba(0,0,0,0.15) !important;
+    text-shadow: 3px 3px 3px rgb(80, 80, 80), 7px 7px 0px rgba(241, 241, 241, 0.15) !important;
 }
 .title_apprenants{
     
-    text-shadow: 3px 3px 0px rgb(75, 72, 72), 9px 8px 0px rgba(0,0,0,0.15) !important;
-    text-decoration: 2px underline  #f00d0d !important;
-    text-underline-offset: 5px !important;
-    text-decoration-line: underline !important;
+    text-shadow: 3px 3px 3px rgb(80, 80, 80), 7px 7px 0px rgba(241, 241, 241, 0.15) !important;
+    
 }
 .title_formateur{
-    text-shadow: 2px 2px 0px rgb(75, 72, 72), 9px 8px 0px rgba(0,0,0,0.15) !important;
-    text-decoration: 2px underline  #f00d0d !important;
-    text-underline-offset: 5px !important;
-    text-decoration-line: underline !important;
+    text-shadow: 3px 3px 3px rgb(80, 80, 80), 7px 7px 0px rgba(241, 241, 241, 0.15) !important;
+    
 }
-.title_technos{
-    text-shadow: 2px 2px 0px rgb(75, 72, 72), 9px 8px 0px rgba(0,0,0,0.15) !important;
-    text-decoration: 2px underline  #f00d0d !important;
-    text-underline-offset: 5px !important;
-    text-decoration-line: underline !important;
-}
+
 .entry-title{
-    text-shadow: 2px 2px 0px rgb(75, 72, 72), 9px 8px 0px rgba(0,0,0,0.15) !important;
-    text-decoration: 2px underline  #f00d0d !important;
+    text-shadow: 3px 3px 3px rgb(80, 80, 80), 7px 7px 0px rgba(241, 241, 241, 0.15) !important;
+    /* text-decoration: 2px underline  #f00d0d !important;
     text-underline-offset: 5px !important;
-    text-decoration-line: underline !important;
+    text-decoration-line: underline !important; */
 }
+
+.title_technos{
+    text-shadow: 3px 3px 3px rgb(22, 22, 22), 7px 7px 0px rgba(241, 241, 241, 0.15) !important;
+    
+}
+
 .entry-title h1{
     color: #f00 !important;
 }
@@ -100,12 +109,7 @@ Template: inspiro
 .wp-block-file a{
     position: static;
 }
-.wp-block-media-text{
-   
-}
-.card_techno_pres{
-    
-}
+
 .card_techno_pres{
     margin-top: 25px !important;
     margin-bottom: 25px !important;
@@ -116,7 +120,7 @@ Template: inspiro
    
 }
 
-
+/* bouton telechargement */
 
 a.wp-block-file__button{
     display: inline-block !important;
@@ -156,6 +160,7 @@ a.wp-block-file__button{
   a.wp-block-file__button:hover{
     color:#fff !important;
   }
+/* fin bouton */
 
   .entry-content .wp-block-columns {
     padding-left: 0.5em !important;
@@ -184,17 +189,14 @@ a.wp-block-file__button{
     padding-top: 10px !important;
     padding-left: 30px !important;
     padding-right: 30px !important;
-    padding-bottom: 60px !important;
+
 }
 
-ul.slick-dots {
-    margin-bottom: -60px !important;
-}
 
 img.rt-responsive-img{
    
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 .item-content-wrapper.tss-right {
@@ -207,6 +209,31 @@ img.rt-responsive-img{
     color: rgb(61, 60, 60) !important;
 }
 
+.dvd img, .div_apprenants img{
+    border-radius: 50% !important;
+}
 
 
+/* presentation de la formation */
 
+
+.wp-block-column.\.border_pres_form {
+    border-radius: 10px !important;
+    background: rgba(247, 247, 247, 0.56) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15) !important;
+    color: rgb(61, 60, 60) !important;
+    padding: 20px !important;
+}
+.wp-block-column.border_pres_form {
+    border-radius: 10px !important;
+    background: rgba(247, 247, 247, 0.56) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15) !important;
+    color: rgb(61, 60, 60) !important;
+    padding: 20px !important;
+}
