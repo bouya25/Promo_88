@@ -210,7 +210,7 @@ img.rt-responsive-img{
 }
 
 .dvd img, .div_apprenants img{
-    border-radius: 50% !important;
+    /* border-radius: 50% !important; */
 }
 
 
@@ -236,4 +236,15 @@ img.rt-responsive-img{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15) !important;
     color: rgb(61, 60, 60) !important;
     padding: 20px !important;
+}
+
+.entry-content .wp-block-image .aligncenter img{
+    margin-bottom: -15px !important;
+}
+img.wp-image-630{
+    margin-bottom: -15px !important;
+}
+
+.wp-block-column.formateur_card{
+    padding-bottom: -50px !important;
 }
