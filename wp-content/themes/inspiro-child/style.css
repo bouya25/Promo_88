@@ -84,7 +84,10 @@ Template: inspiro
 .title_technos{
     text-shadow: 3px 3px 3px rgb(22, 22, 22), 7px 7px 0px rgba(241, 241, 241, 0.15) !important;
     
-} */
+} 
+h1.has-background, h2.has-background, h3.has-background, h4.has-background, h5.has-background, h6.has-background {
+    padding: 1.25em 1.375em;
+}
 
 .entry-title h1{
     color: #f00 !important;
