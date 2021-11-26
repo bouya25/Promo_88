@@ -274,7 +274,6 @@ if ( ! class_exists( 'CR_Qna' ) ) :
 
 		public function recaptcha_script() {
 			if( is_product() ) {
-				wp_enqueue_style( 'dashicons' );
 				if( self::is_captcha_enabled() ) {
 					$lang = CR_Trust_Badge::get_badge_language();
 					$site_key = get_option( 'ivole_qna_captcha_site_key', '' );

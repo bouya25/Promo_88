@@ -413,13 +413,13 @@ if (! class_exists('CR_All_Reviews')) :
 			}
 			$return .= '</ol>';
 
+			$top_comments_count = array_reduce( $comments, function( $carry, $item ) {
+				if( property_exists( $item, 'comment_parent' ) && 0 == $item->comment_parent ) {
+					$carry++;
+				}
+				return $carry;
+			}, 0 );
 			if ( $this->shortcode_atts['show_more'] == 0 ) {
-				$top_comments_count = array_reduce( $comments, function( $carry, $item ) {
-					if( property_exists( $item, 'comment_parent' ) && 0 == $item->comment_parent ) {
-						$carry++;
-					}
-					return $carry;
-				}, 0 );
 				$big = 999999999; // need an unlikely integer
 				$pages = ceil( $top_comments_count / $per_page );
 				$args = array(
@@ -440,10 +440,12 @@ if (! class_exists('CR_All_Reviews')) :
 				$return .= '<div class="cr-all-reviews-pagination">';
 				$return .= paginate_links($args);
 				$return .= '</div>';
-			} else{
-				$return .= '<button id="cr-show-more-all-reviews" class="ivole-show-more-button" type="button" data-page="1">';
-				$return .=  __( 'Show more', 'customer-reviews-woocommerce' );
-				$return .= '</button>';
+			} else {
+				if( $this->shortcode_atts['show_more'] < $top_comments_count ) {
+					$return .= '<button id="cr-show-more-all-reviews" class="ivole-show-more-button" type="button" data-page="1">';
+					$return .=  __( 'Show more', 'customer-reviews-woocommerce' );
+					$return .= '</button>';
+				}
 			}
 			$return .= '<span id="cr-show-more-review-spinner" style="display:none;"></span>';
 			$return .= '<p class="cr-search-no-reviews" style="display:none">' . esc_html__('Sorry, no reviews match your current selections', 'customer-reviews-woocommerce') . '</p>';
@@ -551,7 +553,7 @@ if (! class_exists('CR_All_Reviews')) :
 		public function cr_style_1()
 		{
 			if( is_singular() && !is_product() ) {
-				$assets_version = '4.29';
+				$assets_version = '4.31';
 				$disable_lightbox = 'yes' === get_option( 'ivole_disable_lightbox', 'no' ) ? true : false;
 				// Load gallery scripts on product pages only if supported.
 				if ( 'yes' === get_option( 'ivole_attach_image', 'no' ) || 'yes' === get_option( 'ivole_form_attach_media', 'no' ) ) {

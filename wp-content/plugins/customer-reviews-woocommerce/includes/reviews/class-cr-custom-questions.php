@@ -136,13 +136,18 @@ if ( ! class_exists( 'CR_Custom_Questions' ) ) :
 						case 'rating':
 							if( isset( $this->questions[$i]->title ) && isset( $this->questions[$i]->value ) ) {
 								if( $this->questions[$i]->value > 0 ) {
-									$output .= '<div class="iv' . $fr . '-custom-question-rating-cont"><span class="iv' . $fr . '-custom-question-rating">' . $this->questions[$i]->title . ' :</span>';
-									$output .= '<span class="iv' . $fr . '-star-rating">';
-									for ( $j = 1; $j < 6; $j++ ) {
-										$class = ( $j <= $this->questions[$i]->value ) ? 'filled' : 'empty';
-										$output .= '<span class="dashicons dashicons-star-' . $class . '"></span>';
+									if( $f ) {
+										$output .= '<div class="cr' . $fr . '-custom-question-rating-cont"><div class="cr' . $fr . '-custom-question-rating">' . $this->questions[$i]->title . ' :</div>';
+										$output .= wc_get_rating_html( $this->questions[$i]->value ) . '</div>';
+									} else {
+										$output .= '<div class="cr' . $fr . '-custom-question-rating-cont"><span class="cr' . $fr . '-custom-question-rating">' . $this->questions[$i]->title . ' :</span>';
+										$output .= '<span class="iv' . $fr . '-star-rating">';
+										for ( $j = 1; $j < 6; $j++ ) {
+											$class = ( $j <= $this->questions[$i]->value ) ? 'filled' : 'empty';
+											$output .= '<span class="dashicons dashicons-star-' . $class . '"></span>';
+										}
+										$output .= '</span></div>';
 									}
-									$output .= '</span></div>';
 								}
 							}
 							break;

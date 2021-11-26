@@ -700,7 +700,7 @@ if ( ! class_exists( 'CR_Reviews_Grid' ) ) {
 				'ivole-frontend-js',
 				plugins_url('/js/frontend.js', dirname( dirname( __FILE__ ) ) ),
 				array(),
-				'4.29',
+				'4.31',
 				true
 			);
 			wp_register_script(

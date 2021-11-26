@@ -17,8 +17,8 @@ span.iv-custom-question-radio { font-weight: 550; }
 p.iv-custom-question-checkbox { font-weight: 550; margin: 0.6em 0; }
 p.iv-custom-question-p {margin: 0.6em 0;}
 ul.iv-custom-question-ul {margin: 0.6em 0;}
-div.iv-custom-question-rating-cont { margin: 0.6em 0; }
-span.iv-custom-question-rating { padding-right: 5px; font-weight: 550; vertical-align: middle; }
+div.cr-custom-question-rating-cont { margin: 0.6em 0; }
+span.cr-custom-question-rating { padding-right: 5px; font-weight: 550; vertical-align: middle; }
 span.iv-star-rating span.dashicons { font-size: 15px; height: 15px; width: 15px; vertical-align: middle; }
 td.comment ul.iv-custom-question-ul { list-style-type: square; margin-top: 0.6em; margin-bottom: 0.6em; }
 .widefat td p.ivole-reply-published-cr {font-size: 90%;}

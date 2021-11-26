@@ -54,7 +54,9 @@ if( $attributes ) {
 	</div>
 	<div class="cr-qna-new-q-overlay">
 		<div class="cr-qna-new-q-form">
-			<button class="cr-qna-new-q-form-close"><span class="dashicons dashicons-no"></span></button>
+			<button class="cr-qna-new-q-form-close">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><rect x="0" fill="none" width="20" height="20"/><g><path class="cr-no-icon" d="M12.12 10l3.53 3.53-2.12 2.12L10 12.12l-3.54 3.54-2.12-2.12L7.88 10 4.34 6.46l2.12-2.12L10 7.88l3.54-3.53 2.12 2.12z"/></g></svg>
+			</button>
 			<div class="cr-qna-new-q-form-input">
 				<p class="cr-qna-new-q-form-title"><?php _e( 'Ask a question', 'customer-reviews-woocommerce' ); ?></p>
 				<p class="cr-qna-new-q-form-text"><?php _e( 'Your question will be answered by a store representative or other customers.', 'customer-reviews-woocommerce' ); ?></p>
@@ -89,7 +91,9 @@ if( $attributes ) {
 			</div>
 		</div>
 		<div class="cr-qna-new-q-form cr-qna-new-a-form">
-			<button class="cr-qna-new-q-form-close"><span class="dashicons dashicons-no"></span></button>
+			<button class="cr-qna-new-q-form-close">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><rect x="0" fill="none" width="20" height="20"/><g><path class="cr-no-icon" d="M12.12 10l3.53 3.53-2.12 2.12L10 12.12l-3.54 3.54-2.12-2.12L7.88 10 4.34 6.46l2.12-2.12L10 7.88l3.54-3.53 2.12 2.12z"/></g></svg>
+			</button>
 			<div class="cr-qna-new-q-form-input">
 				<p class="cr-qna-new-q-form-title"><?php _e( 'Add an answer', 'customer-reviews-woocommerce' ); ?></p>
 				<p class="cr-qna-new-q-form-text"></p>

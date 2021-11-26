@@ -3,7 +3,7 @@ Contributors: ivole
 Tags: woocommerce, review plugin, review reminder, customer reviews, review for discount
 Requires at least: 4.5
 Tested up to: 5.8
-Stable tag: 4.30
+Stable tag: 4.31
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl.html
 
@@ -217,6 +217,9 @@ If you would like to change how reviews are sorted on product pages, it is possi
 
 == Changelog ==
 
+= 4.31 =
+* New feature: a diagnostics report about hidden reviews linked to products deleted in WooCommerce
+* Bug fixes and minor improvements
 = 4.30 =
 * New feature: automatic download of videos attached by customers via aggregated review forms into the local WordPress Media Library
 * Bug fixes and minor improvements

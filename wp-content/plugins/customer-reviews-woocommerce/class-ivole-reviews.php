@@ -398,7 +398,7 @@ if ( ! class_exists( 'Ivole_Reviews' ) ) :
 		}
 		public function cr_style_1() {
 			if( is_product() ) {
-				$assets_version = '4.29';
+				$assets_version = '4.31';
 				if( !current_theme_supports( 'wc-product-gallery-lightbox' ) && !$this->disable_lightbox ) {
 					wp_enqueue_script( 'photoswipe-ui-default' );
 					wp_enqueue_style( 'photoswipe-default-skin' );
@@ -427,7 +427,6 @@ if ( ! class_exists( 'Ivole_Reviews' ) ) :
 				)
 			);
 			wp_enqueue_script( 'ivole-frontend-js' );
-			wp_enqueue_style( 'dashicons' );
 		}
 	}
 	public function cr_style_2() {
@@ -1234,7 +1233,7 @@ if ( ! class_exists( 'Ivole_Reviews' ) ) :
 				<div class="cr-ajax-reviews-cus-images-modal">
 					<div class="cr-ajax-reviews-cus-images-hdr">
 						<button class="cr-ajax-reviews-cus-images-close">
-							<span class="dashicons dashicons-no"></span>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><rect x="0" fill="none" width="20" height="20"/><g><path class="cr-no-icon" d="M12.12 10l3.53 3.53-2.12 2.12L10 12.12l-3.54 3.54-2.12-2.12L7.88 10 4.34 6.46l2.12-2.12L10 7.88l3.54-3.53 2.12 2.12z"/></g></svg>
 						</button>
 					</div>
 					<div class="cr-ajax-reviews-cus-images-slider-main cr-reviews-slider" data-slick='<?php echo wp_json_encode( $main_slider_settings ); ?>'>

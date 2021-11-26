@@ -11,7 +11,7 @@ if ( ! class_exists( 'Ivole_Admin' ) ) :
 		private $milestones;
 
 		public function __construct() {
-			$this->ver = '4.30';
+			$this->ver = '4.31';
 			if ( is_admin() && current_user_can('manage_options') ) {
 				$this->milestones = new Ivole_Milestones();
 				add_action( 'wp_ajax_ivole_dismiss_activated_notice', array( $this, 'dismiss_activated_notice' ) );

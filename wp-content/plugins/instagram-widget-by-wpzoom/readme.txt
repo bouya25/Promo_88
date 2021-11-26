@@ -71,6 +71,9 @@ Make sure to connect your Instagram account with the plugin. You can do that in 
 
 == Changelog ==
 
+= 1.9.3 =
+* Bug fix with the lightbox in Safari
+
 = 1.9.2 =
 * Minor bug fixes and improvements with the lightbox
 

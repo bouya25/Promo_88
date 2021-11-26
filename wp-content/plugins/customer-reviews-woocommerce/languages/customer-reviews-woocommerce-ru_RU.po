@@ -6,7 +6,7 @@ msgstr ""
 "(latest release)\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/customer-reviews-"
 "woocommerce\n"
-"POT-Creation-Date: 2021-11-21T14:54:20+00:00\n"
+"POT-Creation-Date: 2021-11-26T01:40:01+00:00\n"
 "PO-Revision-Date: 2020-04-26 23:19+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -40,12 +40,12 @@ msgstr ""
 msgid "https://www.cusrev.com/business/"
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:35
 #: class-ivole-admin-menu-diagnostics.php:41
+#: class-ivole-admin-menu-diagnostics.php:47
 msgid "Diagnostics Information"
 msgstr "Диагностическая информация"
 
-#: class-ivole-admin-menu-diagnostics.php:37
+#: class-ivole-admin-menu-diagnostics.php:43
 msgid ""
 "Diagnostic report about parameters of your website configuration that are "
 "important for Customer Reviews plugin. If there are any errors or warnings "
@@ -55,111 +55,119 @@ msgstr ""
 "важны для плагина Customer Reviews. Если отчёт показывает ошибки или "
 "предупреждения, плагин может работать некорректно."
 
-#: class-ivole-admin-menu-diagnostics.php:61
 #: class-ivole-admin-menu-diagnostics.php:62
+msgid "Hidden Reviews"
+msgstr ""
+
+#: class-ivole-admin-menu-diagnostics.php:64
+msgid "Reviews that are hidden because products were deleted in WooCommerce."
+msgstr ""
+
+#: class-ivole-admin-menu-diagnostics.php:90
+#: class-ivole-admin-menu-diagnostics.php:91
 msgid "Diagnostics"
 msgstr "Диагностика"
 
-#: class-ivole-admin-menu-diagnostics.php:101
+#: class-ivole-admin-menu-diagnostics.php:130
 msgid "Error code: "
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:107
+#: class-ivole-admin-menu-diagnostics.php:136
 msgid "Error message: "
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:114
+#: class-ivole-admin-menu-diagnostics.php:143
 msgid "Details: "
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:120
+#: class-ivole-admin-menu-diagnostics.php:149
 msgid " Error message: "
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:128
+#: class-ivole-admin-menu-diagnostics.php:157
 msgid "WP Version:"
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:129
+#: class-ivole-admin-menu-diagnostics.php:158
 msgid "The version of WordPress installed on your site."
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:133
+#: class-ivole-admin-menu-diagnostics.php:162
 msgid "WC Version:"
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:134
+#: class-ivole-admin-menu-diagnostics.php:163
 msgid "The version of WooCommerce installed on your site."
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:138
+#: class-ivole-admin-menu-diagnostics.php:167
 msgid "cURL Version:"
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:139
+#: class-ivole-admin-menu-diagnostics.php:168
 msgid "The version of cURL library installed on your site."
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:143
+#: class-ivole-admin-menu-diagnostics.php:172
 msgid "WP Cron:"
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:144
+#: class-ivole-admin-menu-diagnostics.php:173
 msgid "Displays whether or not WP Cron Jobs are enabled."
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:153
+#: class-ivole-admin-menu-diagnostics.php:182
 msgid "WP REST API:"
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:154
+#: class-ivole-admin-menu-diagnostics.php:183
 msgid "Displays whether or not WP REST API is enabled."
 msgstr ""
 
 #. translators: please keep '%s' before 'support article'
-#: class-ivole-admin-menu-diagnostics.php:160
+#: class-ivole-admin-menu-diagnostics.php:189
 msgid ""
 "The plugin will not be able to receive reviews because REST API is disabled. "
 "Additional information can be found in this %ssupport article"
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:166
+#: class-ivole-admin-menu-diagnostics.php:195
 msgid "WC Slider:"
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:167
+#: class-ivole-admin-menu-diagnostics.php:196
 msgid "Displays whether or not WooCommerce Slider library is enabled."
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:167
-#: class-ivole-admin-menu-diagnostics.php:176
-#: class-ivole-admin-menu-diagnostics.php:185
+#: class-ivole-admin-menu-diagnostics.php:196
+#: class-ivole-admin-menu-diagnostics.php:205
+#: class-ivole-admin-menu-diagnostics.php:214
 msgid ""
 "This warning can be safely ignored, if your theme does not use the offical "
 "WooCommerce libraries."
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:175
+#: class-ivole-admin-menu-diagnostics.php:204
 msgid "WC Zoom:"
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:176
+#: class-ivole-admin-menu-diagnostics.php:205
 msgid "Displays whether or not WooCommerce Zoom library is enabled."
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:184
+#: class-ivole-admin-menu-diagnostics.php:213
 msgid "WC Lightbox:"
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:185
+#: class-ivole-admin-menu-diagnostics.php:214
 msgid "Displays whether or not WooCommerce Lightbox library is enabled."
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:193
+#: class-ivole-admin-menu-diagnostics.php:222
 msgid "XMLWriter:"
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:194
+#: class-ivole-admin-menu-diagnostics.php:223
 msgid ""
 "Displays whether or not XMLWriter extension is enabled. This extension is "
 "required to generate XML feeds with products and reviews. If the extension "
@@ -167,41 +175,51 @@ msgid ""
 "it."
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:202
+#: class-ivole-admin-menu-diagnostics.php:231
 msgid "Duplicate Site (disable automatic review reminders):"
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:204
+#: class-ivole-admin-menu-diagnostics.php:233
 msgid ""
 "It looks like this site has moved or is a duplicate site. The plugin has "
 "disabled sending automatic review reminder emails on this site to prevent "
 "duplicate reminders from a staging or test environment."
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:206
+#: class-ivole-admin-menu-diagnostics.php:235
 msgid ""
 "The plugin checks if this site has moved or is a duplicate site. If the "
 "check is positive, the plugin will disable sending automatic review reminder "
 "emails to prevent duplicate reminders from a staging or test environment."
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:210
-#: class-ivole-admin-menu-diagnostics.php:248 class-ivole-reviews.php:386
+#: class-ivole-admin-menu-diagnostics.php:239
+#: class-ivole-admin-menu-diagnostics.php:314 class-ivole-reviews.php:386
 #: includes/reviews/class-cr-admin-menu-reviews.php:216
 #: includes/reviews/class-cr-reviews-media-meta-box.php:85
 msgid "Yes"
 msgstr "Да"
 
-#: class-ivole-admin-menu-diagnostics.php:211
+#: class-ivole-admin-menu-diagnostics.php:240
 msgid "This is not a duplicate site"
 msgstr ""
 
-#: class-ivole-admin-menu-diagnostics.php:215
-#: class-ivole-admin-menu-diagnostics.php:248 class-ivole-reviews.php:392
+#: class-ivole-admin-menu-diagnostics.php:244
+#: class-ivole-admin-menu-diagnostics.php:314 class-ivole-reviews.php:392
 #: includes/reviews/class-cr-admin-menu-reviews.php:217
 #: includes/reviews/class-cr-reviews-media-meta-box.php:84
 msgid "No"
 msgstr "Нет"
+
+#: class-ivole-admin-menu-diagnostics.php:258
+#: includes/qna/class-cr-qna-list-table.php:374
+#: includes/reviews/class-cr-reviews-list-table.php:377
+msgid "Product"
+msgstr "Товар"
+
+#: class-ivole-admin-menu-diagnostics.php:259
+msgid "Review(s)"
+msgstr ""
 
 #: class-ivole-admin.php:130
 msgid ""
@@ -416,8 +434,8 @@ msgstr "Загруженные фотографии:"
 
 #: class-ivole-reviews.php:182 class-ivole-reviews.php:197
 #: class-ivole-reviews.php:277 class-ivole-reviews.php:293
-#: class-ivole-reviews.php:1181 class-ivole-reviews.php:1248
-#: class-ivole-reviews.php:1273 class-ivole-structured-data.php:48
+#: class-ivole-reviews.php:1180 class-ivole-reviews.php:1247
+#: class-ivole-reviews.php:1272 class-ivole-structured-data.php:48
 #: includes/blocks/class-cr-all-reviews.php:248
 #: includes/blocks/class-cr-all-reviews.php:267
 #: includes/reviews/class-cr-reviews-list-table.php:793
@@ -453,15 +471,15 @@ msgstr ""
 "%d из %d человек считают этот отзыв полезным. Был ли данный отзыв полезен "
 "для вас?"
 
-#: class-ivole-reviews.php:413 includes/blocks/class-cr-all-reviews.php:575
+#: class-ivole-reviews.php:413 includes/blocks/class-cr-all-reviews.php:577
 msgid "Processing..."
 msgstr "Обработка…"
 
-#: class-ivole-reviews.php:414 includes/blocks/class-cr-all-reviews.php:576
+#: class-ivole-reviews.php:414 includes/blocks/class-cr-all-reviews.php:578
 msgid "Thank you for your feedback!"
 msgstr "Спасибо за ваш отзыв!"
 
-#: class-ivole-reviews.php:415 includes/blocks/class-cr-all-reviews.php:577
+#: class-ivole-reviews.php:415 includes/blocks/class-cr-all-reviews.php:579
 msgid ""
 "An error occurred with submission of your feedback. Please refresh the page "
 "and try again."
@@ -469,7 +487,7 @@ msgstr ""
 "При отправке вашего отзыва возникла ошибка. Пожалуйста обновите страницу и "
 "попробуйте еще раз."
 
-#: class-ivole-reviews.php:416 includes/blocks/class-cr-all-reviews.php:578
+#: class-ivole-reviews.php:416 includes/blocks/class-cr-all-reviews.php:580
 msgid ""
 "An error occurred with submission of your feedback. Please report it to the "
 "website administrator."
@@ -481,7 +499,7 @@ msgstr ""
 msgid "Please type your review text"
 msgstr ""
 
-#: class-ivole-reviews.php:422 class-ivole-reviews.php:1334
+#: class-ivole-reviews.php:422 class-ivole-reviews.php:1333
 msgid "Error: accepted file types are PNG, JPG, JPEG, GIF"
 msgstr ""
 
@@ -491,19 +509,19 @@ msgid ""
 "can be uploaded is %d."
 msgstr ""
 
-#: class-ivole-reviews.php:424 class-ivole-reviews.php:1325
+#: class-ivole-reviews.php:424 class-ivole-reviews.php:1324
 msgid "Error: the file(s) is too large"
 msgstr ""
 
-#: class-ivole-reviews.php:462
+#: class-ivole-reviews.php:461
 msgid "reCAPTCHA vertification failed and your review cannot be saved."
 msgstr ""
 
-#: class-ivole-reviews.php:462
+#: class-ivole-reviews.php:461
 msgid "Add Review Error"
 msgstr ""
 
-#: class-ivole-reviews.php:538 includes/blocks/class-cr-all-reviews.php:717
+#: class-ivole-reviews.php:537 includes/blocks/class-cr-all-reviews.php:719
 #: includes/blocks/class-cr-reviews-grid.php:893
 msgid "Based on %s review"
 msgid_plural "Based on %s reviews"
@@ -511,49 +529,49 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: class-ivole-reviews.php:550 class-ivole-reviews.php:554
-#: includes/blocks/class-cr-all-reviews.php:729
-#: includes/blocks/class-cr-all-reviews.php:733
+#: class-ivole-reviews.php:549 class-ivole-reviews.php:553
+#: includes/blocks/class-cr-all-reviews.php:731
+#: includes/blocks/class-cr-all-reviews.php:735
 #: includes/blocks/class-cr-reviews-grid.php:905
 #: includes/blocks/class-cr-reviews-grid.php:909
 msgid "5 star"
 msgstr "5 звёзд"
 
-#: class-ivole-reviews.php:561 class-ivole-reviews.php:565
-#: includes/blocks/class-cr-all-reviews.php:742
-#: includes/blocks/class-cr-all-reviews.php:746
+#: class-ivole-reviews.php:560 class-ivole-reviews.php:564
+#: includes/blocks/class-cr-all-reviews.php:744
+#: includes/blocks/class-cr-all-reviews.php:748
 #: includes/blocks/class-cr-reviews-grid.php:918
 #: includes/blocks/class-cr-reviews-grid.php:922
 msgid "4 star"
 msgstr "4 звезды"
 
-#: class-ivole-reviews.php:572 class-ivole-reviews.php:576
-#: includes/blocks/class-cr-all-reviews.php:755
-#: includes/blocks/class-cr-all-reviews.php:759
+#: class-ivole-reviews.php:571 class-ivole-reviews.php:575
+#: includes/blocks/class-cr-all-reviews.php:757
+#: includes/blocks/class-cr-all-reviews.php:761
 #: includes/blocks/class-cr-reviews-grid.php:931
 #: includes/blocks/class-cr-reviews-grid.php:935
 msgid "3 star"
 msgstr "3 звезды"
 
-#: class-ivole-reviews.php:583 class-ivole-reviews.php:587
-#: includes/blocks/class-cr-all-reviews.php:768
-#: includes/blocks/class-cr-all-reviews.php:772
+#: class-ivole-reviews.php:582 class-ivole-reviews.php:586
+#: includes/blocks/class-cr-all-reviews.php:770
+#: includes/blocks/class-cr-all-reviews.php:774
 #: includes/blocks/class-cr-reviews-grid.php:944
 #: includes/blocks/class-cr-reviews-grid.php:948
 msgid "2 star"
 msgstr "2 звезды"
 
-#: class-ivole-reviews.php:594 class-ivole-reviews.php:598
-#: includes/blocks/class-cr-all-reviews.php:781
-#: includes/blocks/class-cr-all-reviews.php:785
+#: class-ivole-reviews.php:593 class-ivole-reviews.php:597
+#: includes/blocks/class-cr-all-reviews.php:783
+#: includes/blocks/class-cr-all-reviews.php:787
 #: includes/blocks/class-cr-reviews-grid.php:957
 #: includes/blocks/class-cr-reviews-grid.php:961
 msgid "1 star"
 msgstr "1 звезда"
 
 #. translators: %1$d is the displayed counts of reviews, %2$d is the total count of reviews, %3$d is the star rating of reviews
-#: class-ivole-reviews.php:614 includes/blocks/class-cr-all-reviews.php:473
-#: includes/blocks/class-cr-all-reviews.php:802
+#: class-ivole-reviews.php:613 includes/blocks/class-cr-all-reviews.php:475
+#: includes/blocks/class-cr-all-reviews.php:804
 #: includes/blocks/class-cr-reviews-grid.php:978
 #: includes/reviews/class-cr-ajax-reviews.php:333
 msgid "Showing %1$d of %2$d review (%3$d star). "
@@ -563,8 +581,8 @@ msgstr[1] ""
 msgstr[2] ""
 
 #. translators: $d is the number of reviews
-#: class-ivole-reviews.php:615 includes/blocks/class-cr-all-reviews.php:474
-#: includes/blocks/class-cr-all-reviews.php:803
+#: class-ivole-reviews.php:614 includes/blocks/class-cr-all-reviews.php:476
+#: includes/blocks/class-cr-all-reviews.php:805
 #: includes/blocks/class-cr-reviews-grid.php:979
 #: includes/reviews/class-cr-ajax-reviews.php:335
 msgid "See all %d review"
@@ -573,7 +591,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: class-ivole-reviews.php:1052 class-ivole-reviews.php:1054
+#: class-ivole-reviews.php:1051 class-ivole-reviews.php:1053
 #: includes/blocks/class-cr-reviews-grid.php:395
 #: includes/blocks/class-cr-reviews-grid.php:397
 #: includes/blocks/class-cr-reviews-grid.php:402
@@ -585,35 +603,35 @@ msgstr[2] ""
 msgid "Verified review"
 msgstr "Проверенный отзыв"
 
-#: class-ivole-reviews.php:1063 includes/blocks/class-cr-reviews-grid.php:398
+#: class-ivole-reviews.php:1062 includes/blocks/class-cr-reviews-grid.php:398
 #: includes/blocks/class-cr-reviews-grid.php:405
 #: includes/blocks/class-cr-reviews-slider.php:320
 #: includes/blocks/class-cr-reviews-slider.php:327
 msgid "view original"
 msgstr "посмотреть оригинал"
 
-#: class-ivole-reviews.php:1064
+#: class-ivole-reviews.php:1063
 msgid "External link"
 msgstr ""
 
-#: class-ivole-reviews.php:1094
+#: class-ivole-reviews.php:1093
 #: includes/reviews/class-cr-reviews-list-table.php:762
 msgid "Featured Review"
 msgstr ""
 
-#: class-ivole-reviews.php:1124
+#: class-ivole-reviews.php:1123
 msgid "Most Recent"
 msgstr ""
 
-#: class-ivole-reviews.php:1127
+#: class-ivole-reviews.php:1126
 msgid "Most Helpful"
 msgstr ""
 
-#: class-ivole-reviews.php:1171
+#: class-ivole-reviews.php:1170
 msgid "Customer Images"
 msgstr ""
 
-#: class-ivole-reviews.php:1316
+#: class-ivole-reviews.php:1315
 msgid "Error: please solve the CAPTCHA before uploading files"
 msgstr ""
 
@@ -680,12 +698,12 @@ msgid "Community support"
 msgstr ""
 
 #: includes/blocks/class-cr-all-reviews.php:393
-#: includes/blocks/class-cr-all-reviews.php:449
+#: includes/blocks/class-cr-all-reviews.php:451
 #: templates/cr-ajax-product-reviews.php:77
 msgid "Sorry, no reviews match your current selections"
 msgstr ""
 
-#: includes/blocks/class-cr-all-reviews.php:445
+#: includes/blocks/class-cr-all-reviews.php:446
 #: templates/cr-ajax-product-reviews.php:75 templates/qna-tab.php:44
 #: templates/reviews-grid.php:134
 msgid "Show more"
@@ -1743,11 +1761,6 @@ msgstr ""
 msgid "Question / Answer"
 msgstr ""
 
-#: includes/qna/class-cr-qna-list-table.php:374
-#: includes/reviews/class-cr-reviews-list-table.php:377
-msgid "Product"
-msgstr "Товар"
-
 #: includes/qna/class-cr-qna-list-table.php:377
 #: includes/reviews/class-cr-reviews-list-table.php:380
 msgid "Submitted On"
@@ -2012,7 +2025,7 @@ msgid "Try again"
 msgstr ""
 
 #: includes/reviews/class-cr-admin-menu-reviews.php:221
-#: templates/qna-tab.php:79 templates/qna-tab.php:114
+#: templates/qna-tab.php:81 templates/qna-tab.php:118
 msgid "OK"
 msgstr ""
 
@@ -4452,7 +4465,7 @@ msgstr ""
 msgid "Search answers"
 msgstr ""
 
-#: templates/qna-tab.php:35 templates/qna-tab.php:59
+#: templates/qna-tab.php:35 templates/qna-tab.php:61
 msgid "Ask a question"
 msgstr ""
 
@@ -4464,66 +4477,66 @@ msgstr ""
 msgid "There are no questions yet"
 msgstr ""
 
-#: templates/qna-tab.php:60
+#: templates/qna-tab.php:62
 msgid ""
 "Your question will be answered by a store representative or other customers."
 msgstr ""
 
-#: templates/qna-tab.php:61
+#: templates/qna-tab.php:63
 msgid "Start your question with 'What', 'How', 'Why', etc."
 msgstr ""
 
-#: templates/qna-tab.php:62 templates/qna-tab.php:97
+#: templates/qna-tab.php:64 templates/qna-tab.php:101
 msgid "Your name"
 msgstr ""
 
-#: templates/qna-tab.php:63 templates/qna-tab.php:98
+#: templates/qna-tab.php:65 templates/qna-tab.php:102
 msgid "Your email"
 msgstr ""
 
-#: templates/qna-tab.php:67 templates/qna-tab.php:102
+#: templates/qna-tab.php:69 templates/qna-tab.php:106
 msgid ""
 "This site is protected by reCAPTCHA and the Google %1$sPrivacy Policy%2$s "
 "and %3$sTerms of Service%4$s apply."
 msgstr ""
 
-#: templates/qna-tab.php:70 templates/qna-tab.php:105
+#: templates/qna-tab.php:72 templates/qna-tab.php:109
 msgid "Submit"
 msgstr ""
 
-#: templates/qna-tab.php:75
+#: templates/qna-tab.php:77
 msgid "Thank you for the question!"
 msgstr ""
 
-#: templates/qna-tab.php:77
+#: templates/qna-tab.php:79
 msgid ""
 "Your question has been received and will be answered soon. Please do not "
 "submit the same question again."
 msgstr ""
 
-#: templates/qna-tab.php:83 templates/qna-tab.php:118
+#: templates/qna-tab.php:85 templates/qna-tab.php:122
 msgid "Error"
 msgstr ""
 
-#: templates/qna-tab.php:86 templates/qna-tab.php:120
+#: templates/qna-tab.php:88 templates/qna-tab.php:124
 msgid ""
 "An error occurred when saving your question. Please report it to the website "
 "administrator. Additional information:"
 msgstr ""
 
-#: templates/qna-tab.php:94
+#: templates/qna-tab.php:98
 msgid "Add an answer"
 msgstr ""
 
-#: templates/qna-tab.php:96
+#: templates/qna-tab.php:100
 msgid "Write your answer"
 msgstr ""
 
-#: templates/qna-tab.php:110
+#: templates/qna-tab.php:114
 msgid "Thank you for the answer!"
 msgstr ""
 
-#: templates/qna-tab.php:112
+#: templates/qna-tab.php:116
 msgid ""
 "Your answer has been received and will be published soon. Please do not "
 "submit the same answer again."

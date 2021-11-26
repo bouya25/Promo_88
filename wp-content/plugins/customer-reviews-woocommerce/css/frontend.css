@@ -443,11 +443,33 @@ img.ivole-verified-badge-ext-icon {
 .woocommerce #content div.product #reviews .comment-text ul.ivf-custom-question-ul {margin: 0.6em 0;}
 .woocommerce #content div.product #reviews .comment-text ul.ivf-custom-question-ul li {margin:0;}
 .woocommerce #content div.product #reviews .comment-text span.ivf-custom-question-radio {font-weight: 550;}
-.woocommerce #content div.product #reviews .comment-text hr.ivf-custom-question-hr {margin: 0.6em 0;}
-.woocommerce #content div.product #reviews .comment-text div.ivf-custom-question-rating-cont {margin: 0.6em 0;}
-.woocommerce #content div.product #reviews .comment-text p.ivf-custom-question-p {margin: 0.6em 0;}
-.woocommerce #content div.product #reviews .comment-text span.ivf-custom-question-rating { padding-right: 5px; font-weight: 550; vertical-align: middle; }
-.woocommerce #content div.product #reviews .comment-text span.ivf-star-rating span.dashicons { font-size: 15px; height: 15px; width: 15px; vertical-align: middle; }
+.woocommerce #content div.product #reviews .comment-text hr.ivf-custom-question-hr,
+.cr-all-reviews-shortcode .commentlist hr.ivf-custom-question-hr {
+	margin: 0.6em 0;
+}
+.woocommerce #content div.product #reviews .comment-text .crf-custom-question-rating-cont,
+.cr-all-reviews-shortcode .commentlist .crf-custom-question-rating-cont {
+	margin: 0.6em 0;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+}
+.woocommerce #content div.product #reviews .comment-text p.ivf-custom-question-p,
+.cr-all-reviews-shortcode .commentlist p.ivf-custom-question-p {
+	margin: 0.6em 0;
+}
+.woocommerce #content div.product #reviews .comment-text .crf-custom-question-rating,
+.cr-all-reviews-shortcode .commentlist .crf-custom-question-rating {
+	padding-right: 7px;
+	font-weight: 550;
+}
+.woocommerce #content div.product #reviews .comment-text .crf-custom-question-rating-cont .star-rating,
+.cr-all-reviews-shortcode .commentlist .crf-custom-question-rating-cont .star-rating {
+	font-size: 1em;
+	height: 1.1em;
+	line-height: 1.1em;
+	float: none;
+}
 .checkbox input.cr-customer-consent-checkbox {margin-right:7px;}
 .cr-show-more{
 	width:100%;
@@ -688,23 +710,23 @@ div.cr-ajax-reviews-sort-div {
 	display: block;
 	zoom: 1;
 	background-color: transparent;
-	border-radius: 3px;
-	border: 1px solid;
-	border-color: transparent;
+	border: none;
 	float: right;
 	padding: 8px;
 	position: absolute;
 	top: 50%;
 	right: 5px;
-	margin: -16px 0 0;
+	margin: -15px 0 0;
 	line-height: 0;
 }
-#reviews.cr-reviews-ajax-reviews div.cr-ajax-reviews-cus-images-modal button.cr-ajax-reviews-cus-images-close span.dashicons {
+#reviews.cr-reviews-ajax-reviews div.cr-ajax-reviews-cus-images-modal button.cr-ajax-reviews-cus-images-close svg {
 	opacity: .64;
-	width: 14px;
-	height: 14px;
-	font-size: 14px;
-	color: #333333;
+	width: 15px;
+	height: 15px;
+	font-size: 15px;
+}
+#reviews.cr-reviews-ajax-reviews div.cr-ajax-reviews-cus-images-modal button.cr-ajax-reviews-cus-images-close .cr-no-icon {
+	fill: #333333;
 }
 #reviews.cr-reviews-ajax-reviews div.cr-ajax-reviews-cus-images-modal div.cr-ajax-reviews-slide-main-flex {
 	display: flex;
@@ -742,7 +764,8 @@ div.cr-ajax-reviews-sort-div {
 }
 #reviews.cr-reviews-ajax-reviews div.cr-ajax-reviews-cus-images-modal div.cr-ajax-reviews-cus-images-slider-main .cr-ajax-reviews-slide-main-comment .cr-ajax-reviews-slide-main-comment-body {
 	max-height: 300px;
-	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 #reviews.cr-reviews-ajax-reviews div.cr-ajax-reviews-cus-images-modal div.cr-ajax-reviews-cus-images-slider-main.slick-initialized .slick-slide {
 	float: none;
@@ -840,12 +863,14 @@ div.cr-ajax-reviews-sort-div {
 	line-height: 0;
 	cursor: pointer;
 }
-#cr_qna.cr-qna-block div.cr-qna-new-q-overlay .cr-qna-new-q-form .cr-qna-new-q-form-close span.dashicons {
+#cr_qna.cr-qna-block div.cr-qna-new-q-overlay .cr-qna-new-q-form .cr-qna-new-q-form-close svg {
 	display: block;
 	width: 24px;
 	height: 24px;
 	font-size: 24px;
-	color: #dadada;
+}
+#cr_qna.cr-qna-block div.cr-qna-new-q-overlay .cr-qna-new-q-form .cr-qna-new-q-form-close .cr-no-icon {
+	fill: #dadada;
 }
 #cr_qna.cr-qna-block div.cr-qna-new-q-overlay .cr-qna-new-q-form .cr-qna-new-q-form-title {
 	max-width: 100%;
@@ -1296,15 +1321,18 @@ div.cr-ajax-reviews-sort-div {
 .cr-upload-images-preview .cr-upload-images-containers.cr-upload-delete-pending .cr-upload-images-delete {
 	opacity: 0.2;
 }
-#review_form .cr-upload-images-preview .cr-upload-images-containers .cr-upload-images-delete span.dashicons,
-.cr-upload-images-preview .cr-upload-images-containers .cr-upload-images-delete span.dashicons {
+#review_form .cr-upload-images-preview .cr-upload-images-containers .cr-upload-images-delete svg,
+.cr-upload-images-preview .cr-upload-images-containers .cr-upload-images-delete svg {
 	padding: 0px;
 	width: 18px;
 	height: 18px;
 	font-size: 18px;
 	line-height: 18px;
 	display: block;
-	color: #FFFFFF;
+}
+#review_form .cr-upload-images-preview .cr-upload-images-containers .cr-upload-images-delete .cr-no-icon,
+.cr-upload-images-preview .cr-upload-images-containers .cr-upload-images-delete .cr-no-icon {
+	fill: #FFFFFF;
 }
 #review_form .cr-upload-images-preview .cr-upload-images-containers .cr-upload-images-delete-spinner,
 .cr-upload-images-preview .cr-upload-images-containers .cr-upload-images-delete-spinner {

@@ -23,8 +23,14 @@ if ( ! class_exists( 'CR_Diagnostics_Admin_Menu' ) ):
 		*/
 		protected $settings;
 
+		/**
+		* @var array The array of deleted reviews
+		*/
+		private $deleted_reviews;
+
 		public function __construct() {
 			$this->menu_slug = 'cr-reviews-diagnostics';
+			$this->deleted_reviews = null;
 
 			$this->page_url = add_query_arg( array(
 				'page' => $this->menu_slug
@@ -49,9 +55,32 @@ if ( ! class_exists( 'CR_Diagnostics_Admin_Menu' ) ):
 				)
 			);
 
+			if( $this->is_this_page() ) {
+				$this->get_deleted_reviews();
+				if( $this->deleted_reviews && is_array( $this->deleted_reviews ) && 0 < count( $this->deleted_reviews ) ) {
+					$this->settings[] = array(
+						'title' => __( 'Hidden Reviews', 'customer-reviews-woocommerce' ),
+						'type' => 'title',
+						'desc' => __( 'Reviews that are hidden because products were deleted in WooCommerce.', 'customer-reviews-woocommerce' ),
+						'id' => 'cr_diagnostics_delprod_title'
+					);
+					$this->settings[] = array(
+						'name' => 'List of Hidden Reviews',
+						'type' => 'crdiagdelprod',
+						'desc' => '',
+						'id'   => 'cr_diagnostics_delprod'
+					);
+					$this->settings[] = array(
+						'type' => 'sectionend',
+						'id'   => 'cr_diagnostics_delprod_title'
+					);
+				}
+			}
+
 			add_action( 'admin_enqueue_scripts', array( $this, 'include_scripts' ), 11 );
 			add_action( 'admin_menu', array( $this, 'register_diagnostics_menu' ), 11 );
 			add_action( 'woocommerce_admin_field_crdiag', array( $this, 'show_report' ) );
+			add_action( 'woocommerce_admin_field_crdiagdelprod', array( $this, 'show_delprod' ) );
 			add_action( 'wp_ajax_cr_check_duplicate_site_url', array( $this, 'cr_check_duplicate_site_url' ) );
 		}
 
@@ -221,6 +250,43 @@ if ( ! class_exists( 'CR_Diagnostics_Admin_Menu' ) ):
 			<?php
 		}
 
+		public function show_delprod( $value ) {
+			?>
+			<table class="wc_status_table widefat" cellspacing="0" id="delprod">
+				<thead>
+					<tr>
+						<th><?php _e( 'Product', 'customer-reviews-woocommerce' ); ?></th>
+						<th><?php _e( 'Review(s)', 'customer-reviews-woocommerce' ); ?></th>
+					</tr>
+				</thead>
+				<tbody>
+					<?php
+						$prev_prod_id = -1;
+						$first_line = true;
+						foreach( $this->deleted_reviews as $review ) {
+							if( $prev_prod_id !== $review['ID'] ) {
+								if( !$first_line ) {
+									echo '</td></tr>';
+								} else {
+									$first_line = false;
+								}
+								echo '<tr>';
+								echo '<td><a href="' . get_edit_post_link( $review['ID'] ) . '">' . esc_html( $review['post_title'] ) . '</a><br>ID: ' . esc_html( $review['ID'] ) . '</td>';
+								echo '<td><a href="' . get_edit_comment_link( $review['comment_ID'] ) . '">' . esc_html( $review['comment_ID'] ) . '</a>';
+							} else {
+								echo ', ' . '<a href="' . get_edit_comment_link( $review['comment_ID'] ) . '">' . esc_html( $review['comment_ID'] ) . '</a>';
+							}
+							$prev_prod_id = $review['ID'];
+						}
+						if( -1 !== $prev_prod_id ) {
+							echo '</td></tr>';
+						}
+					?>
+				</tbody>
+			</table>
+			<?php
+		}
+
 		private function get_woo_version_number() {
 			// If get_plugins() isn't available, require it
 			if ( ! function_exists( 'get_plugins' ) )
@@ -258,6 +324,27 @@ if ( ! class_exists( 'CR_Diagnostics_Admin_Menu' ) ):
 			if ( isset( $_REQUEST['page'] ) && $_REQUEST['page'] === $this->menu_slug ) {
 				wp_enqueue_script( 'cr-admin-settings', plugins_url('js/admin-settings.js', __FILE__ ), array(), false, false );
 			}
+		}
+
+		public function get_deleted_reviews() {
+			global $wpdb;
+			$deleted_reviews = $wpdb->get_results(
+					"
+				SELECT p.ID, c.comment_ID, p.post_title FROM $wpdb->commentmeta m
+				LEFT JOIN $wpdb->comments c ON m.comment_id = c.comment_ID
+				LEFT JOIN $wpdb->posts p ON c.comment_post_ID = p.ID
+				WHERE m.meta_key = 'rating'
+				AND p.post_status = 'trash'
+				AND m.meta_value > 0
+				ORDER BY p.ID
+					",
+				ARRAY_A
+			);
+			$this->deleted_reviews = $deleted_reviews;
+		}
+
+		public function is_this_page() {
+			return ( isset( $_GET['page'] ) && $_GET['page'] === $this->menu_slug );
 		}
 	}
 

@@ -782,7 +782,7 @@
 					);
 					let removeButton = jQuery("<button/>", {class:"cr-upload-images-delete"});
 					removeButton.append(
-						jQuery("<span/>", {class:"dashicons dashicons-no"})
+						'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><rect x="0" fill="none" width="20" height="20"/><g><path class="cr-no-icon" d="M12.12 10l3.53 3.53-2.12 2.12L10 12.12l-3.54 3.54-2.12-2.12L7.88 10 4.34 6.46l2.12-2.12L10 7.88l3.54-3.53 2.12 2.12z"/></g></svg>'
 					);
 					container.append(
 						removeButton
